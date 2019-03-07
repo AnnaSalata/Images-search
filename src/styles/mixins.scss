@@ -1,0 +1,33 @@
+$page-wrapper-text-color: #ffffff;
+$section-text-color: #505050;
+$section-header-color: #4e5665;
+$nav-link-color: #909090;
+$nav-link-color-active: #4e5665;
+$bg-color: #ffffff;
+$footer-bg-color: #f8f8f8;
+$orange-color: #ecb84c;
+$section-border: 1px solid #d0d4d8;
+
+@mixin mobile() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: 1367px) {
+    @content;
+  }
+}

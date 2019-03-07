@@ -1,0 +1,53 @@
+@import '../../styles/mixins.scss';
+
+.grid-item {
+  width: 100%;
+  position: relative;
+  @include mobile {
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+
+  }
+
+  &__likes {
+    display: none;
+  }
+
+  &__username {
+    display: none;
+  }
+}
+
+.grid-item:hover .grid-item__likes {
+  transform: scale(1);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 70px;
+  height: 30px;
+  color: #696969;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+.grid-item:hover .grid-item__likes__img {
+  transform: scale(1);
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.grid-item:hover .grid-item__username {
+  position: absolute;
+  color: #fff;
+  display: block;
+  left: 20px;
+  bottom: 60px;
+}
