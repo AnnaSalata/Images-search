@@ -6,3 +6,9 @@
   margin: 10px;
   cursor: pointer;
 }
+
+@media (max-width: 720px) {
+  .tag {
+    margin: 5px;
+  }
+}
