@@ -15,7 +15,6 @@ export class GridItem extends React.Component {
     };
 
     componentDidMount() {
-        console.log(this.imgRef.current.clientHeight);
         this.imgRef.current.addEventListener('load', this.onImageLoad);
     }
 

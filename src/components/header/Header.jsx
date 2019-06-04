@@ -9,7 +9,6 @@ export class Header extends React.Component {
     };
 
     toggle = () => {
-        console.log('Toggle!!');
         this.setState({isExpand: !this.state.isExpand})
     };
 
