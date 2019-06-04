@@ -21,7 +21,7 @@ export class Header extends React.Component {
         }
         return <nav className={className}>
             <div className="global-nav__controls controls">
-                <div className="controls__close" onClick={this.toggle}>Menu</div>
+                <div className="controls__menu" onClick={this.toggle}>Menu</div>
                 <div className="controls__logo"><img className="controls__logo" src={logo} alt=""/></div>
             </div>
             <ul className="global-nav__options">
