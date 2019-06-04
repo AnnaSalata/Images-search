@@ -4,6 +4,7 @@ import {Header} from './components/header/';
 import {SearchForm} from "./components/searchForm";
 import {Tags} from "./components/tags";
 import {Grid} from './components/grid';
+import {Footer} from "./components/footer";
 
 const items = [
     {
@@ -128,7 +129,9 @@ class App extends Component {
                 }
                 <div className="total-count">Total images: {this.state.total}, Total
                     pages: {this.state.totalPages}</div>
+                <Footer/>
             </div>
+
         );
     }
 }
